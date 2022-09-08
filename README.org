@@ -1,0 +1,28 @@
+# A Readme to breakdown the investment project here.
+
+This is also an experiment with org mode in emacs. We'll see how we end up liking it.
+
+* CI Directory Structure
+** This is a directory that will contain all of the containerization information for all of the different components.
+** Invest
+*** CI
+**** Scraper.docker
+**** PostgreSQL.docker
+**** Flask.docker
+**** Vue.docker
+*** docker-compose.yml
+*** SQLInterface
+**** A SQL Interface package that the scraper and flask app both use in order to communicate with the database.
+     This might be able to be a single db file at first, but when we start dealing with a massive amount of data
+     this will have to be made to be a separate package that can handle local, docker and cloud db instances.
+
+
+
+* Scraper
+** A Python tool that leverages a SQL Alchemy back end.
+* PostgreSQL
+* Flask Web Server
+* Vue Front-End
+
+
+#  LocalWords:  SQLInterface yml 
